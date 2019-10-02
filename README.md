@@ -44,7 +44,7 @@ By default, the output files will be called `bom_to_fab.csv` and `pos_to_fab.csv
 change them with command line arguments:
 
 ```
-> python JLCfilter.py --BOM my_BOM.csv --pos my_positions.csv --BOMto BOM_output.csv --posto post_output.csv
+> python JLCfilter.py --BOM my_BOM.csv --pos my_positions.csv --BOMto BOM_output.csv --posto pos_output.csv
 ```
 
 The script will not overwrite existing output files, unless you give it the argument
