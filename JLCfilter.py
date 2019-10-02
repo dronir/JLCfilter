@@ -67,9 +67,6 @@ def process(style, infile, overwrite, outfile):
         print("Wrote output to {}.".format(outfile))
 
 
-def main(args):
-    process("BOM", args["BOM"], args["force"], args["BOMto"])
-    process("POS", args["pos"], args["force"], args["posto"])
 
 if __name__=="__main__":
     maybe_project = find_projectfile()
@@ -95,16 +92,6 @@ if __name__=="__main__":
     if not "pos" in args:
         print("Error: No position file given!")
         exit()
-    main(args)
     
-
-
-
-
-
-
-
-
-
-
-
+    process("BOM", args["BOM"], args["force"], args["BOMto"])
+    process("POS", args["pos"], args["force"], args["posto"])
