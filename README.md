@@ -6,6 +6,20 @@ to the format that the JLCPCB assembly service desires. It simply loads in the C
 selects the required columns, renames the columns to what JLC expects, and writes out
 new CSV files.
 
+## Files
+
+This script will work on these to specific files:
+
+* BOM file generated in Pcbnew with `File / Fabrication Outputs / BOM file`
+* Position file generated in Pcbnew with `File / Fabrication Outputs / Footprint Position (.pos) File`
+
+Generate the position file with the following settings:
+
+* Format: CSV
+* Units: millimeters
+* Files: Single file for board
+
+
 ## Usage
 
 The command `python JLCfilter.py -h` will print a help message.
