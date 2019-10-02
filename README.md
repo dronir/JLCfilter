@@ -6,6 +6,8 @@ to the format that the JLCPCB assembly service desires. It simply loads in the C
 selects the required columns, renames the columns to what JLC expects, and writes out
 new CSV files.
 
+Requires [https://pandas.pydata.org/](Pandas) for processing the CSV files.
+
 ## Files
 
 This script will work on these to specific files:
