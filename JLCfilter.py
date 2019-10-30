@@ -38,12 +38,10 @@ JLCPCB_NAMES = {
 
 def find_projectfile():
     g = glob.glob("{}/*.kicad_pcb".format(getcwd()))
-    if len(g) == 0:
-        return None
-    elif len(g) > 1:
-        return None
-    else:
+    if len(g) == 1:
         return g[0]
+    else:
+        return None
 
 
 def filter(data, FILTER, RENAMES):
