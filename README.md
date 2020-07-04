@@ -10,7 +10,7 @@ Requires [Pandas](https://pandas.pydata.org/) for processing the CSV files.
 
 ## Files
 
-This script will work on these to specific files:
+This script will work on these two specific files:
 
 * BOM file generated in Pcbnew with `File / Fabrication Outputs / BOM file`
 * Position file generated in Pcbnew with `File / Fabrication Outputs / Footprint Position (.pos) File`
