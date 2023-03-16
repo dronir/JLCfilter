@@ -29,11 +29,18 @@ The command `python JLCfilter.py -h` will print a help message.
 If you are in your KiCad project folder, this can be enough:
 
 ```
-python JLCfilter.py 
+python JLCfilter.py . 
 ```
 
+Or in another directory,
+
+```
+python JLCfilter.py path/to/files
+```
+
+
 The script tries to automatically determine your project name by looking for a `.kicad_pcb`
-file in the same directory. If you are in a different directory, or have named the BOM
+file in the directory. If that file doesn't exist in the directory or you have named the BOM
 and position files something else, you need to specify them:
 
 ```
