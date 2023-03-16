@@ -112,31 +112,33 @@ def main():
 
     parser.add_argument(
         "--bom",
-        metavar="BOM_file",
+        metavar="FILENAME",
         help="BOM file from KiCad",
         default=argparse.SUPPRESS
     )
     parser.add_argument(
         "--pos",
-        metavar="position_file",
+        metavar="FILENAME",
         help="Position file from KiCad",
         default=argparse.SUPPRESS,
     )
     parser.add_argument(
-        "--force",
-        "-f",
-        action="store_true",
-        help="Overwrite output files if they exist",
-    )
-    parser.add_argument(
         "--bom-output",
+        metavar="FILENAME",
         help="Name of BOM output file (default: bom_to_fab.csv)",
         default="bom_to_fab.csv",
     )
     parser.add_argument(
         "--pos-output",
+        metavar="FILENAME",
         help="Name of position output file (default: pos_to_fab.csv)",
         default="pos_to_fab.csv",
+    )
+    parser.add_argument(
+        "-f",
+        "--force",
+        action="store_true",
+        help="Overwrite output files if they exist",
     )
     parser.add_argument(
         "path",

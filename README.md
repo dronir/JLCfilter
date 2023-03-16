@@ -40,8 +40,8 @@ python JLCfilter.py path/to/files
 
 
 The script tries to automatically determine your project name by looking for a `.kicad_pcb`
-file in the directory. If that file doesn't exist in the directory or you have named the BOM
-and position files something else, you need to specify them:
+file in the directory. If that file doesn't exist or you have named the BOM and position 
+files something else, you need to specify them:
 
 ```
 python JLCfilter.py --bom my_BOM.csv --pos my_positions.csv
