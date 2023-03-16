@@ -37,15 +37,15 @@ file in the same directory. If you are in a different directory, or have named t
 and position files something else, you need to specify them:
 
 ```
-python JLCfilter.py --BOM my_BOM.csv --pos my_positions.csv
+python JLCfilter.py --bom my_BOM.csv --pos my_positions.csv
 ```
 
-By default, the output files will be called `bom_to_fab.csv` and `pos_to_fab.csv`. You can
-change them with command line arguments:
+By default, the output files will be called `bom_to_fab.csv` and `pos_to_fab.csv`. 
+You can change them with command line arguments:
 
 ```
-python JLCfilter.py --BOM my_BOM.csv --pos my_positions.csv --BOMto BOM_output.csv --posto pos_output.csv
+python JLCfilter.py --bom my_BOM.csv --pos my_positions.csv --bom-output BOM_output.csv --pos-output pos_output.csv
 ```
 
-The script will not overwrite existing output files, unless you give it the argument
-`--force`.
+The script will not overwrite existing output files, 
+unless you give it the argument `--force`.
